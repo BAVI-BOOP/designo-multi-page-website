@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 body {
@@ -113,6 +114,76 @@ nav ul li:hover::after {
   }
 }
 
+/*? LIGHT MODE */
+.lightModeContainer {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  z-index: 1;
+}
+
+.cont {
+  height: 50px;
+  width: 100px;
+  background: url("../assets/shared/lightMode.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 80px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  display: none;
+}
+
+#btn:checked ~ .cont {
+  background: url("../assets/shared/darkMode.jpg");
+
+  background-size: cover;
+  box-shadow: 0 1000px 0 3000px #202430;
+  z-index: 1;
+}
+
+#btn:checked nav {
+  color: white;
+}
+
+.cont:before {
+  content: "";
+  margin: 0 5%;
+  height: 100%;
+  width: 50%;
+  background: url("../assets/shared/darkMode.jpg");
+  background-size: cover;
+  border-radius: 5rem;
+  transition: 0.5s;
+}
+
+#btn:checked ~ .cont:before {
+  transform: translateX(80%);
+  background: url("../assets/shared/lightMode.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cont {
+    height: 30px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cont {
+    height: 20px;
+    width: 40px;
+  }
+}
+
+/*? LIGHT MODE */
 /*! HERO */
 
 .hero {
@@ -205,6 +276,23 @@ nav ul li:hover::after {
   }
 }
 
+/* ! Leaf pattern */
+.FirstLeafPattern {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -1;
+  width: 85%;
+}
+
+.SecondLeafPattern {
+  z-index: 0;
+  position: absolute;
+  bottom: -100%;
+  right: -20%;
+  transform: rotateY(180deg);
+  width: 85%;
+}
 /*! DESIGN SECTION */
 
 .design {
@@ -241,6 +329,7 @@ nav ul li:hover::after {
   flex-direction: column;
   border-radius: 1.5rem;
   position: relative;
+  cursor: pointer;
 }
 
 .appDesign,
@@ -256,7 +345,7 @@ nav ul li:hover::after {
   position: relative;
   flex-direction: column;
   width: 95%;
-
+  cursor: pointer;
   /* border: 2px solid orange; */
   border-radius: 1.5rem;
 }
@@ -331,6 +420,7 @@ nav ul li:hover::after {
   align-items: center;
   padding: 5rem 0;
   margin-bottom: 7rem;
+  position: relative;
 }
 
 .teamImage {
@@ -413,6 +503,8 @@ nav ul li:hover::after {
   overflow: hidden;
   padding: 0 0;
   margin-bottom: -6rem;
+  position: relative;
+  z-index: 3;
 }
 
 .contactText {
@@ -425,17 +517,25 @@ nav ul li:hover::after {
   letter-spacing: 5px;
 }
 
-.contact button {
+.contactBtn {
   text-decoration: none;
-  color: var(--white);
+  color: black;
   font-size: 1rem;
   height: 4rem;
   padding: 1rem;
-  background-color: var(--light-peach);
+  background-color: var(--white);
   border: none;
   border-radius: 1rem;
   font-weight: 500;
   margin: auto;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.contactBtn:active {
+  color: var(--white);
+  background-color: var(--light-peach);
 }
 
 .contactLeft {
@@ -476,6 +576,8 @@ footer {
   background-color: var(--black);
   height: 60%;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .footerTop {
@@ -499,6 +601,19 @@ footer {
   list-style: none;
   gap: 2rem;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.footerTop ul li::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: var(--white);
+  transition: 300ms;
+}
+.footerTop ul li:hover::after {
+  width: 100%;
 }
 
 .footerBottom {
@@ -523,8 +638,11 @@ footer {
 
 .footerIcons img {
   margin: 0 5px;
+  cursor: pointer;
 }
-
+.footerIcons img:hover {
+  opacity: 0.7;
+}
 @media screen and (max-width: 768px) {
   .footerTop {
     width: 95%;

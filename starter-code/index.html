@@ -23,14 +23,16 @@
     <!--! Navbar  -->
     <nav>
       <img
+        class="navLogo"
         src="../starter-code/assets/shared/desktop/logo-dark.png"
         alt="nav-logo"
       />
-      <ul>
-        <li>OUR COMPANY</li>
-        <li>LOCATIONS</li>
-        <li>CONTACT</li>
+      <ul id="c">
+        <li id="light">OUR COMPANY</li>
+        <li id="light">LOCATIONS</li>
+        <li id="light">CONTACT</li>
       </ul>
+
       <div class="mobileContainer">
         <i class="fa-solid fa-bars navMobileMenu"></i>
         <ul class="mobileUL">
@@ -40,12 +42,15 @@
         </ul>
       </div>
     </nav>
-
+    <div class="lightModeContainer">
+      <input id="btn" type="checkbox" />
+      <label for="btn" for="btn2" class="cont"></label>
+    </div>
     <!--! Hero -->
     <div class="hero">
       <div class="heroText">
         <h2>Award-winning custom designs and digital branding solutions</h2>
-        <p>
+        <p id="anan">
           With over 10 years in the industry, we are experienced in creating
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
@@ -60,6 +65,14 @@
         />
       </div>
     </div>
+
+    <!--? Bg Pattern  -->
+    <img
+      class="FirstLeafPattern"
+      src="./assets/shared/desktop/bg-pattern-leaf.svg"
+      alt="leaf"
+    />
+    <!--? Bg Pattern  -->
     <!--! Design  -->
     <div class="design">
       <div class="webDesign">
@@ -77,6 +90,7 @@
         </div>
       </div>
     </div>
+
     <!--! Team  -->
     <div class="team">
       <div class="teamContainer teamFirst">
@@ -87,8 +101,8 @@
           />
         </div>
         <div>
-          <h2>PASSIONATE</h2>
-          <p>
+          <h2 id="light">PASSIONATE</h2>
+          <p id="light">
             Each project starts with an in-depth brand research to ensure we
             only create products that serve a purpose. We merge art, design, and
             technology into exciting new solutions.
@@ -103,8 +117,8 @@
           />
         </div>
         <div>
-          <h2>RESOURCEFUL</h2>
-          <p>
+          <h2 id="light">RESOURCEFUL</h2>
+          <p id="light">
             Everything that we do has a strategic purpose. We use an agile
             approach in all of our projects and value customer collaboration. It
             guarantees superior results that fulfill our clients’ needs.
@@ -120,14 +134,21 @@
           />
         </div>
         <div>
-          <h2>FRIENDLY</h2>
-          <p>
+          <h2 id="light">FRIENDLY</h2>
+          <p id="light">
             We are a group of enthusiastic folks who know how to put people
             first. Our success depends on our customers, and we strive to give
             them the best experience a company can provide.
           </p>
         </div>
       </div>
+      <!--? Bg Pattern  -->
+      <img
+        class="SecondLeafPattern"
+        src="./assets/shared/desktop/bg-pattern-leaf.svg"
+        alt="leaf"
+      />
+      <!--? Bg Pattern  -->
     </div>
 
     <!--! Contact  -->
@@ -139,13 +160,14 @@
           our expertise can help your business grow. Get in touch
         </p>
       </div>
-      <div class="contactLeft"><button>GET IN TOUCH</button></div>
-
       <img
         class="pattern"
         src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
         alt="pattern"
       />
+      <div class="contactLeft">
+        <button class="contactBtn">GET IN TOUCH</button>
+      </div>
     </div>
 
     <footer>
