@@ -27,18 +27,19 @@ body {
   --light-grey: #f1f3f5;
 }
 
-/*! NAVBAR */
+/* ! NAVBAR */
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 4rem 0 0;
   margin: auto;
   width: 80%;
+  margin-bottom: 5rem;
 }
 
 nav img {
-  height: 1.8rem;
+  height: 1.7rem;
 }
 
 nav ul {
@@ -46,7 +47,7 @@ nav ul {
   display: flex;
   gap: 2rem;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 19px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -63,6 +64,10 @@ nav ul li:hover::after {
   width: 100%;
 }
 
+.navMobileMenu {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     font-size: 11px;
@@ -71,6 +76,40 @@ nav ul li:hover::after {
 
   nav img {
     height: 1rem;
+  }
+}
+
+.mobileUL {
+  position: absolute;
+  width: 5rem;
+  height: 10rem;
+  right: 2%;
+}
+
+.mobileUL li {
+  background-color: var(--peach);
+  margin-bottom: 4px;
+  text-align: center;
+  color: var(--white);
+}
+.mobileContainer {
+  display: none;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  nav ul {
+    display: none;
+  }
+
+  .navMobileMenu {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobileContainer {
+    display: block;
   }
 }
 
@@ -86,6 +125,7 @@ nav ul li:hover::after {
   background-image: url("../assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: bottom right;
+  padding: 4rem 0;
 }
 
 .heroText {
@@ -123,7 +163,6 @@ nav ul li:hover::after {
 }
 
 .heroImage {
-  background-image: url("../assets/home/desktop/bg-pattern-hero-home.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -131,7 +170,8 @@ nav ul li:hover::after {
 .heroPhone {
   width: 30vw;
   object-fit: cover;
-  transform: translateY(5%);
+  transform: translateY(10%);
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,9 +193,15 @@ nav ul li:hover::after {
     font-size: 16px;
   }
 
+  .heroImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .heroPhone {
-    width: 30rem;
-    margin: auto;
+    width: 20rem;
+    transform: translateY(5%);
   }
 }
 
@@ -166,9 +212,9 @@ nav ul li:hover::after {
   margin: auto;
   display: flex;
   height: 75%;
-
   color: var(--white);
   margin-top: 10%;
+  margin-bottom: 5rem;
 }
 
 .design h2 {
@@ -271,5 +317,250 @@ nav ul li:hover::after {
     width: 100%;
     background-position: bottom;
     margin-bottom: 3%;
+  }
+}
+
+/*! TEAM SECTION */
+.team {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 5%;
+  text-align: center;
+  align-items: center;
+  padding: 5rem 0;
+  margin-bottom: 7rem;
+}
+
+.teamImage {
+  background: url("../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team h2,
+.team p {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.team p {
+  font-size: 20px;
+}
+
+.teamImage img {
+  object-fit: cover;
+}
+
+.teamContainer {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    flex-direction: column;
+    padding: 0;
+    gap: 7rem;
+  }
+  .teamContainer {
+    text-align: left;
+    display: flex;
+    height: 12rem;
+    width: 105%;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  .teamContainer p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .teamContainer p {
+    font-size: 12px;
+    background-size: 3rem;
+  }
+
+  .teamImage {
+    background-size: 8rem;
+  }
+
+  .teamImage img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+/*! CONTACT */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  border-radius: 1.5rem;
+  background-size: 5px;
+  padding: 4rem;
+  background-color: var(--peach);
+  overflow: hidden;
+  padding: 0 0;
+  margin-bottom: -6rem;
+}
+
+.contactText {
+  width: 40%;
+  align-self: center;
+  margin: auto;
+}
+.contactText h2 {
+  font-size: 3vw;
+  letter-spacing: 5px;
+}
+
+.contact button {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: var(--light-peach);
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  margin: auto;
+}
+
+.contactLeft {
+  width: 50%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+.pattern {
+  position: absolute;
+  height: 200%;
+  right: 0;
+  bottom: -50%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  .contactText {
+    width: 80%;
+  }
+
+  .contactText h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .contactLeft {
+    height: 5rem;
+    margin: auto;
+  }
+}
+
+/* ! FOOTER */
+
+footer {
+  background-color: var(--black);
+  height: 60%;
+  width: 100%;
+}
+
+.footerTop {
+  display: flex;
+  color: var(--light-grey);
+  height: 60%;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  align-items: flex-end;
+  width: 75%;
+  margin: auto;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.footerTop img {
+  height: 1.8rem;
+}
+
+.footerTop ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 16px;
+}
+
+.footerBottom {
+  display: flex;
+  color: var(--light-grey);
+  height: 35%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerBottom ul {
+  list-style: none;
+  color: var(--light-grey);
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.footerBottom ul li:first-child {
+  font-size: 20px;
+  opacity: 1;
+}
+
+.footerIcons img {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerTop {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 100%;
+  }
+
+  .footerTop,
+  .footerBottom {
+    flex-direction: column;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    color: var(--light-grey);
+    border-bottom: 0px;
+    justify-content: end;
+    padding-bottom: 0;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footerTop ul {
+    flex-direction: column;
+    border-top: 1px solid var(--dark-grey);
+    width: 90vw;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .footerBottom ul li {
+    text-align: center;
   }
 }
