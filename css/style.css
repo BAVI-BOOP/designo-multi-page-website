@@ -27,6 +27,7 @@ body {
   --dark-grey: #333136;
   --light-grey: #f1f3f5;
 }
+/* ! Link Styling */
 
 a {
   text-decoration: none;
@@ -55,6 +56,21 @@ footer a {
 
 .design h3:hover {
   transform: scale(1.1);
+}
+
+/* ! Intro transition */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 /* ! NAVBAR */
