@@ -255,6 +255,7 @@ input {
 .heroText p {
   width: 80%;
   font-size: 24px;
+  color: #3331369c;
 }
 
 .heroImage {
@@ -348,6 +349,7 @@ input {
 .heroText p {
   width: 80%;
   font-size: 18px;
+  color: #333136b9;
 }
 
 .heroImage {
@@ -546,7 +548,7 @@ input {
   background-color: var(--light-peach);
 }
 .realDealText p {
-  color: var(--black);
+  color: rgba(65, 65, 65, 0.863);
 }
 
 .realDealText h2 {
