@@ -63,6 +63,10 @@ footer a {
 
 /* ! NAVBAR */
 
+.navLogo {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -172,6 +176,8 @@ nav ul {
 
 input {
   display: none;
+  color: white;
+  font-size: 16px;
 }
 
 #btn:checked ~ .cont {
@@ -246,7 +252,6 @@ input {
   width: 90%;
   margin-bottom: 5%;
   padding-bottom: 1rem;
-  cursor: pointer;
 }
 
 .heroContact input:hover {
@@ -259,16 +264,16 @@ input {
 }
 
 .heroContact button {
-  padding: 1rem;
+  padding: 0.7rem;
   border: none;
   background-color: var(--light-peach);
   border-radius: 10px;
-  width: 8rem;
+  width: 6rem;
   color: var(--light-grey);
   align-self: end;
   margin-right: 1.5rem;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .heroContact button:active {
@@ -337,6 +342,7 @@ input {
 @media screen and (max-width: 1024px) {
   .hero {
     flex-direction: column;
+    height: 70%;
   }
 
   .heroContact {
@@ -407,7 +413,7 @@ input {
 
 .heroText p {
   width: 80%;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .heroImage {
@@ -629,7 +635,7 @@ input {
 }
 
 .contactText p {
-  font-size: 24px;
+  font-size: 20px;
   padding: 1rem;
 }
 

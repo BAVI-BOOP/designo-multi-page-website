@@ -63,6 +63,10 @@ footer a {
 }
 /* ! NAVBAR */
 
+.navLogo {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
