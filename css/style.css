@@ -58,21 +58,6 @@ footer a {
   transform: scale(1.1);
 }
 
-/* ! Intro transition */
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
 /* ! NAVBAR */
 
 nav {
@@ -242,6 +227,7 @@ input {
   background-repeat: no-repeat;
   background-position: bottom right;
   padding: 4rem 0;
+  position: relative;
 }
 
 .heroText {
@@ -757,4 +743,20 @@ footer {
   .footerBottom ul li {
     text-align: center;
   }
+}
+
+/* ! Intro transition */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-60%);
+  transition: all 1s;
+  z-index: 99;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
