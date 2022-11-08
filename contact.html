@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Designo Agency Website Challenge</title>
+  </head>
+  <body>
+    <!--! Navbar  -->
+    <nav>
+      <img
+        class="navLogo"
+        src="./assets/shared/desktop/logo-dark.png"
+        alt="nav-log"
+      />
+      <ul id="c">
+        <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+        <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+        <li><a id="light" href="./contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="mobileContainer">
+        <i class="fa-solid fa-bars navMobileMenu"></i>
+        <ul class="mobileUL">
+          <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+          <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+          <li><a id="light" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="lightModeContainer">
+      <input id="btn" type="checkbox" />
+      <label for="btn" for="btn2" class="cont"></label>
+    </div>
+    <!-- ! Hero -->
+    <div class="hero">
+      <div class="heroText">
+        <h2>Contact Us</h2>
+        <p>
+          Ready to take it to the next level? Let’s talk about your project or
+          idea and find out how we can help your business grow. If you are
+          looking for unique digital experiences that’s relatable to your users,
+          drop us a line.
+        </p>
+      </div>
+
+      <div class="heroContact">
+        <form>
+          <input type="text" id="name" required placeholder="Rose Coldwell" />
+          <input type="email" id="mail" required placeholder="Email Address" />
+          <input type="text" id="phone" required placeholder="Phone" />
+          <input type="text" id="message" required placeholder="Your Message" />
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <!--! Locations  -->
+    <div class="team">
+      <div class="teamContainer teamFirst">
+        <div class="teamImage">
+          <img
+            src="./assets/shared/desktop/illustration-australia.svg"
+            alt="resourceful"
+          />
+        </div>
+        <div>
+          <h2>AUSTRALIA</h2>
+        </div>
+        <div>
+          <button class="locationBtn">
+            <a href="./locations.html">SEE LOCATION</a>
+          </button>
+        </div>
+      </div>
+      <div class="teamContainer teamSecond">
+        <div class="teamImage">
+          <img
+            src="./assets/shared/desktop/illustration-canada.svg"
+            alt="passionate"
+          />
+        </div>
+        <div>
+          <h2>CANADA</h2>
+        </div>
+        <div>
+          <button class="locationBtn">
+            <a href="./locations.html">SEE LOCATION</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="teamContainer teamThird">
+        <div class="teamImage">
+          <img
+            src="./assets/shared/desktop/illustration-united-kingdom.svg"
+            alt="friendly"
+          />
+        </div>
+        <div>
+          <h2>UNITED KINGDOM</h2>
+        </div>
+        <div>
+          <button class="locationBtn">
+            <a href="./locations.html">SEE LOCATION</a>
+          </button>
+        </div>
+      </div>
+      <!--? Bg Pattern  -->
+      <img
+        class="SecondLeafPattern"
+        src="./assets/shared/desktop/bg-pattern-leaf.svg"
+        alt="leaf"
+      />
+      <!--? Bg Pattern  -->
+    </div>
+
+    <!--! Contact  -->
+    <div class="contact">
+      <div class="contactText">
+        <h2>Let's talk about your project</h2>
+        <p>
+          Ready to take it to the next level? Contact us today and find out how
+          our expertise can help your business grow. Get in touch
+        </p>
+      </div>
+      <img
+        class="pattern"
+        src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
+        alt="pattern"
+      />
+      <div class="contactLeft">
+        <button class="contactBtn">
+          <a href="./contact.html">GET IN TOUCH</a>
+        </button>
+      </div>
+    </div>
+    <!--! Footer  -->
+    <footer>
+      <div class="footerTop">
+        <img src="./assets/shared/desktop/logo-light.png" alt="logo" />
+        <ul>
+          <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+          <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+          <li><a id="light" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <ul>
+          <li>Designo Central Office</li>
+          <li>3886 Wellington Street</li>
+          <li>Toronto, Ontario M9C 3J5</li>
+        </ul>
+        <ul>
+          <li>Contact Us (Central Office)</li>
+          <li>P : +1 253-863-8967</li>
+          <li>M : contact@designo.co</li>
+        </ul>
+        <div class="footerIcons">
+          <img src="./assets/shared/desktop/icon-facebook.svg" alt="fb" />
+          <img src="./assets/shared/desktop/icon-youtube.svg" alt="yt" />
+          <img src="./assets/shared/desktop/icon-twitter.svg" alt="tw" />
+          <img src="./assets/shared/desktop/icon-pinterest.svg" alt="pin" />
+          <img src="./assets/shared/desktop/icon-instagram.svg" alt="ins" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>

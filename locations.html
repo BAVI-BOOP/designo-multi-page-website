@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="a class="map"nonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="./css/locations.css" />
+    <title>Designo Agency</title>
+  </head>
+  <body>
+    <!--! Navbar  -->
+    <nav>
+      <img
+        class="navLogo"
+        src="./assets/shared/desktop/logo-dark.png"
+        alt="nav-logo"
+      />
+      <ul id="c">
+        <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+        <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+        <li><a id="light" href="./contact.html">CONTACT</a></li>
+      </ul>
+
+      <div class="mobileContainer">
+        <i class="fa-solid fa-bars navMobileMenu"></i>
+        <ul class="mobileUL">
+          <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+          <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+          <li><a id="light" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="lightModeContainer">
+      <input id="btn" type="checkbox" />
+      <label for="btn" for="btn2" class="cont"></label>
+    </div>
+
+    <!-- ? LOCATIONS -->
+    <!--! Canada  -->
+    <div class="canada locationBox">
+      <div class="text">
+        <div class="firstText">
+          <h2>Canada</h2>
+          <h3>Designo Central Office</h3>
+          <p>3886 Wellington Street</p>
+          <p>Toronto, Ontario M9C 3J5</p>
+        </div>
+        <div class="secondText">
+          <h3>Contact</h3>
+          <p>P : +1 253-863-8967</p>
+          <p>M : contact@designo.co</p>
+        </div>
+      </div>
+
+      <div id="CanadaMap" class="map"></div>
+    </div>
+
+    <!--! Australia  -->
+    <div class="australia locationBox">
+      <div class="text">
+        <div class="firstText">
+          <h2>Australia</h2>
+          <h3>Designo AU Office</h3>
+          <p>19 Balonne Street</p>
+          <p>New South Wales 2443</p>
+        </div>
+        <div class="secondText">
+          <h3>Contact</h3>
+          <p>P : (02) 6720 9092</p>
+          <p>M : contact@designo.au</p>
+        </div>
+      </div>
+      <div id="AustraliaMap" class="map"></div>
+    </div>
+    <!--! United Kingdom  -->
+    <div class="uk locationBox">
+      <div class="text">
+        <div class="firstText">
+          <h2>United Kingdom</h2>
+          <h3>Designo UK Office</h3>
+          <p>13 Colorado Way</p>
+          <p>Rhyd-y-fro SA8 9GA</p>
+        </div>
+        <div class="secondText">
+          <h3>Contact</h3>
+          <p>P : 078 3115 1400</p>
+          <p>M : contact@designo.uk</p>
+        </div>
+      </div>
+
+      <div id="UKMap" class="map"></div>
+    </div>
+
+    <!--! Contact  -->
+    <div class="contact">
+      <div class="contactText">
+        <h2>Let's talk about your project</h2>
+        <p>
+          Ready to take it to the next level? Contact us today and find out how
+          our expertise can help your business grow. Get in touch
+        </p>
+      </div>
+      <img
+        class="pattern"
+        src="./assets/shared/desktop/bg-pattern-call-to-action.svg"
+        alt="pattern"
+      />
+      <div class="contactLeft">
+        <button class="contactBtn">
+          <a href="./contact.html">GET IN TOUCH</a>
+        </button>
+      </div>
+    </div>
+    <!--! Footer  -->
+    <footer>
+      <div class="footerTop">
+        <img src="./assets/shared/desktop/logo-light.png" alt="logo" />
+        <ul>
+          <li><a href="./index.html" id="light">OUR COMPANY</a></li>
+          <li><a id="light" href="/locations.html">LOCATIONS</a></li>
+          <li><a id="light" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <ul>
+          <li>Designo Central Office</li>
+          <li>3886 Wellington Street</li>
+          <li>Toronto, Ontario M9C 3J5</li>
+        </ul>
+        <ul>
+          <li>Contact Us (Central Office)</li>
+          <li>P : +1 253-863-8967</li>
+          <li>M : contact@designo.co</li>
+        </ul>
+        <div class="footerIcons">
+          <img src="./assets/shared/desktop/icon-facebook.svg" alt="fb" />
+          <img src="./assets/shared/desktop/icon-youtube.svg" alt="yt" />
+          <img src="./assets/shared/desktop/icon-twitter.svg" alt="tw" />
+          <img src="./assets/shared/desktop/icon-pinterest.svg" alt="pin" />
+          <img src="./assets/shared/desktop/icon-instagram.svg" alt="ins" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/map.js"></script>
+  </body>
+</html>
