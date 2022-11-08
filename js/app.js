@@ -39,3 +39,12 @@ darkModeButton.addEventListener("click", () => {
 
   navMobileMenu.style.color = modeBtn.checked ? "#f1f3f5" : "#1d1c1e";
 });
+
+//! Redirect
+
+let icon = document.querySelector(".navLogo");
+console.log("");
+
+icon.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
