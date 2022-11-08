@@ -221,7 +221,7 @@ input {
   width: 80%;
   margin: auto;
   display: flex;
-  height: 35%;
+  height: 50%;
   margin-bottom: 6rem;
   gap: 1rem;
 }
@@ -235,7 +235,7 @@ input {
   background-color: #f7c2b7;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   padding-left: 5%;
   /* TODO değiştir */
   border-radius: 1rem;
@@ -264,7 +264,7 @@ input {
 
 .secondText {
   width: 30%;
-  margin-left: 5%;
+
   margin-bottom: 5;
   align-self: flex-end;
   margin: auto 0;
