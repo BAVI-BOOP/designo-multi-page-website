@@ -158,8 +158,8 @@ nav ul {
 }
 
 .cont {
-  height: 50px;
-  width: 100px;
+  height: 40px;
+  width: 80px;
   background: url("../assets/shared/lightMode.jpg");
   background-size: cover;
   background-position: center;
