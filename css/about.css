@@ -421,7 +421,7 @@ input {
   z-index: -1;
   position: absolute;
   bottom: -100%;
-  right: -20%;
+  right: -12%;
   transform: rotateY(180deg);
   width: 85%;
 }
