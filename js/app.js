@@ -1,7 +1,10 @@
 //! Nav Hamburger Menu
 const hamburgerMenu = document.querySelector(".navMobileMenu");
 const mobileUL = document.querySelector(".mobileUL");
+mobileUL.style.display = "none";
 hamburgerMenu.addEventListener("click", () => {
+  console.log("hey");
+
   mobileUL.style.display = mobileUL.style.display === "none" ? "block" : "none";
   setTimeout(() => {
     mobileUL.style.display = "none";

@@ -123,6 +123,7 @@ nav ul {
   width: 5rem;
   height: 10rem;
   right: 2%;
+  display: none;
 }
 
 .mobileUL li {
@@ -132,11 +133,14 @@ nav ul {
   color: var(--white);
 }
 .mobileContainer {
-  display: none;
   border-radius: 1rem;
 }
 
 @media screen and (max-width: 575px) {
+  nav {
+    margin-bottom: 7rem;
+  }
+
   nav ul {
     display: none;
   }
@@ -149,6 +153,16 @@ nav ul {
 
   .mobileContainer {
     display: block;
+  }
+
+  .mobileUL {
+    right: 14%;
+  }
+
+  .mobileUL li {
+    font-size: 15px;
+    width: 8rem;
+    height: 1.4rem;
   }
 }
 
@@ -342,7 +356,7 @@ input {
 @media screen and (max-width: 1024px) {
   .hero {
     flex-direction: column;
-    height: 70%;
+    height: 90%;
   }
 
   .heroContact {
@@ -354,6 +368,7 @@ input {
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding-bottom: 0.5rem;
   }
 
   .heroText p {
@@ -362,6 +377,10 @@ input {
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: 85%;
+  }
   .heroText h2 {
     font-size: 48px;
   }

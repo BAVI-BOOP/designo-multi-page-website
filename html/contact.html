@@ -12,6 +12,8 @@
     />
 
     <link rel="stylesheet" href="../css/contact.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Designo Agency Website Challenge</title>
   </head>
   <body>
@@ -54,9 +56,16 @@
       </div>
 
       <div class="heroContact">
-        <form>
+        <form onsubmit="myFunction()">
           <input type="text" id="name" required placeholder="Rose Coldwell" />
-          <input type="email" id="mail" required placeholder="Email Address" />
+          <input
+            type="email"
+            id="mail"
+            pattern=".+@gmail\.com"
+            size="30"
+            required
+            placeholder="Email Address"
+          />
           <input type="text" id="phone" required placeholder="Phone" />
           <input type="text" id="message" required placeholder="Your Message" />
           <button type="submit" id="submit">SUBMIT</button>
@@ -176,5 +185,13 @@
     </footer>
 
     <script src="../js/app.js"></script>
+    <script>
+      Swal.fire({
+        title: "Thank You",
+        text: "We will get back to you",
+        icon: "info",
+        confirmButtonText: "Cool",
+      });
+    </script>
   </body>
 </html>

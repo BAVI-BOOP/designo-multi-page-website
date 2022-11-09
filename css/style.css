@@ -133,6 +133,10 @@ li:hover::after {
 }
 
 @media screen and (max-width: 575px) {
+  nav {
+    margin-bottom: 7rem;
+  }
+
   nav ul {
     display: none;
   }
@@ -145,6 +149,16 @@ li:hover::after {
 
   .mobileContainer {
     display: block;
+  }
+
+  .mobileUL {
+    right: 14%;
+  }
+
+  .mobileUL li {
+    font-size: 15px;
+    width: 8rem;
+    height: 1.4rem;
   }
 }
 
