@@ -91,7 +91,7 @@ nav ul {
   cursor: pointer;
 }
 
-#light::after {
+li::after {
   content: "";
   width: 0px;
   height: 1px;
@@ -99,7 +99,7 @@ nav ul {
   background-color: var(--black);
   transition: 300ms;
 }
-#light:hover::after {
+li:hover::after {
   width: 100%;
 }
 
@@ -123,7 +123,6 @@ nav ul {
   width: 5rem;
   height: 10rem;
   right: 2%;
-  display: none;
 }
 
 .mobileUL li {
@@ -133,6 +132,7 @@ nav ul {
   color: var(--white);
 }
 .mobileContainer {
+  display: none;
   border-radius: 1rem;
 }
 
@@ -190,8 +190,6 @@ nav ul {
 
 input {
   display: none;
-  color: white;
-  font-size: 16px;
 }
 
 #btn:checked ~ .cont {
@@ -238,7 +236,6 @@ input {
 }
 
 /*? LIGHT MODE */
-
 /*! Hero */
 
 .heroContact {
