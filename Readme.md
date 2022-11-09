@@ -26,7 +26,7 @@ The aim of this project is to create a 7 page website with given figma designs. 
 ## Screenshot
 
 <p align="center">
-<a href="https://bavi-boop.github.io/designo-multi-page-website/"><img  src="game.gif" alt="screenshot"></a>
+<a href="https://bavi-boop.github.io/designo-multi-page-website/"><img  src="designo.gif" alt="screenshot"></a>
 </p>
 
 <hr>
