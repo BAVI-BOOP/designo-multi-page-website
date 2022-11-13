@@ -37,7 +37,7 @@ The aim of this project is to create a 7 page website with given figma designs. 
 - Advanced CSS
 - Leaflet js library
 - Sweet alerts library
-- Figma designs
+- Figma design
 
 ## Notes
 
