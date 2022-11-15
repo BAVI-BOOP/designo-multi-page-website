@@ -299,7 +299,7 @@ input {
 .hero {
   color: white;
   width: 80%;
-  height: 60%;
+  height: 60rem;
   margin: auto;
   border-radius: 1.5rem;
   background-color: var(--peach);
